@@ -1,0 +1,20 @@
+<ul>
+    <li *ngFor="let persona of listadoPersonas;let i=index">
+        <span>{{i}} {{persona}}</span>
+    </li>
+</ul>
+
+<button (click)="borrarPersona()">Borrar persona</button> 
+
+<div *ngIf="personaBorrada.length>0 else NoHayBorrados">
+    <h3>Personas Borradas</h3>
+    <ul>
+        <li *ngFor="let persona of personaBorrada;let i=index">
+            <span>{{i}} {{persona}}</span>
+        </li>
+    </ul>
+</div>
+<ng-template #NoHayBorrados>
+    <h3>No hay personas borradas</h3>
+</ng-template>
+<button (click)="Reset()">Reset</button>

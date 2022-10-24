@@ -1,0 +1,18 @@
+<dl>
+    <dt>Nombre</dt>
+        <dd>{{nombre}}</dd>
+    <dt>Capitalized from view</dt>
+        <dd>{{nombre.toLocaleUpperCase()}}</dd>
+    <dt>Capitalized from component</dt>
+        <dd>{{getCapitalized()}}</dd>
+    <dt>Edad</dt>
+        <dd>{{edad}}</dd>
+    <dt>Telefono</dt>
+        <dd>{{telefono}}</dd>
+    <dt>Soltero ?</dt>
+        <dd>{{soltero}}</dd>
+    <dt>Resumen</dt>
+        <dd>{{getData()}}</dd>
+</dl>
+<button (click)="cambiarNombre()">Cambiar Nombre</button>
+<button (click)="cambiarEdad()">Cambiar Edad</button>
